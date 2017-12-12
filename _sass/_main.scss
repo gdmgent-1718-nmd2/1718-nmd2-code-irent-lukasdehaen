@@ -105,19 +105,29 @@ b {
 }
 
 .armsup {
-  margin-top: -20px;
+  margin-top: -40px;
+  padding-top: 30px; 
+  padding-bottom: 10px; 
   background-image: url("../../assets/mobile/armsup.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  width: 100%;
+  margin-right: 0; 
+  margin-left: 0; 
+  margin-bottom: -30px; 
+  height: 350px; 
 }
 
 .bottomline {
   border-bottom: solid 10px $lightblue
 }
 .armsupspace {
+  width: 100%;
   margin-top: 45px;
   margin-bottom: 9px;
+  margin-right: 0; 
+  margin-left: 0; 
 }
 
 .alignright {
@@ -501,6 +511,29 @@ b {
 //tablet media query edits
 //
 
+.armsup {
+  margin-top: -40px;
+  padding-top: 30px; 
+  padding-bottom: 10px; 
+  background-image: url("../../assets/mobile/armsup.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  margin-right: 0; 
+  margin-left: 0; 
+  margin-bottom: -30px; 
+  height: 350px; 
+}
+
+.armsupspace {
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 9px;
+  margin-right: 0; 
+  margin-left: 0; 
+}
+
 @include media-breakpoint-up(md) {
   .armsup {
     margin-top: -67px;
@@ -509,14 +542,16 @@ b {
     background-size: contain;
     background-position: center;
     margin-bottom: -10px;
+    height: 600px; 
+    width: 100%
   }
   .armsupspace {
-    margin-top: 80px;
+    padding-top: 40px; 
+    margin-top: 20px;
     margin-bottom: 50px;
   }
   .andmore {
-    margin-top: 40px; 
-    margin-bottom: 20px; 
+    margin-top: 100px; 
   }
   .tabletteam {
     border-radius: 0px; 
@@ -662,4 +697,7 @@ b {
 }
 .notepay {
   margin-top: 95px; 
+}
+.img-fluid {
+  width: 100%
 }
