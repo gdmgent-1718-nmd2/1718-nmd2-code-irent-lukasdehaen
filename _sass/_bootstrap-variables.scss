@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+
 // Custom Variables
 //
 // Put variables overrides here.
@@ -5,16 +9,70 @@
 // See _vendor/bootstrap/scss/_variables.scss
 
 //
+// margins and paddings
+//
+$regpadding: 20px;
+//
 // Color system
 //
 
-$indigo:  #6610f2;
-$primary: $indigo;
+$blue: #53CDFD;
+$primary: $blue;
+$darkblue: #004889;
+$secondary: $darkblue;
+$darkbluetransp: rgba(0,26,76,0.3);
+$darkbluetransparent: $darkbluetransp;
+$white: white;
+$grey: #EEE;
+$lightblue: #B6EEFF;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+//Mobile 
 
-$font-family-base: Merriweather, serif;
+$regfontsize: 10px;
+$regfont: Montserrat, medium;
+
+$titlefontsize: 20px;
+$titlefont: Raleway;
+
+$h2fontsize: 14px;
+$h2font: Montserrat, medium;
+
+$h3fontsize: 15px;
+$h3font: Montserrat, bold;
+
+$h4fontsize: 20px;
+$h4font: Montserrat, bold;
+
+$th4fontsize: 30px;
+$h4font: Montserrat, bold;
+
+$h5fontsize: 14px;
+$h5font: Montserrat, bold;
+
+$headerfontcolor: white;
+$headerfontshade: 2px 4px 4px rgba(0,26,76,0.8);
+
+
+// Tablet
+
+$tregfontsize: 17px;
+$regfont: Montserrat, medium;
+
+$ttitlefontsize: 40px;
+$titlefont: Raleway;
+
+$th2fontsize: 25px;
+$h2font: Montserrat, medium;
+
+$th3fontsize: 23px;
+$h3font: Montserrat, bold;
+
+$th4fontsize: 30px;
+$h4font: Montserrat, bold;
+
+$th5fontsize: 22px;
+$h5font: Montserrat, bold;

@@ -1,3 +1,665 @@
-@import
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900'),
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+//
+// Fonts
+//
+
+p,.p {
+  font-family: $regfont;
+  font-size: $regfontsize;
+  font-weight: 500;
+  color: $darkblue;
+}
+h1,.h1 {
+  font-family: $titlefont;
+  font-size: $titlefontsize;
+}
+h2 {
+  font-family: $h2font;
+  font-size: $h2fontsize;
+  font-weight: 600;
+  color: $darkblue; 
+}
+h3,.h3 {
+  font-family: $h3font;
+  font-size: $h3fontsize;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 10px;
+}
+h4 {
+  font-family: $h4font;
+  font-size: $h4fontsize;
+  font-weight: 600;
+}
+h5 {
+  font-family: $h5font;
+  font-size: $h5fontsize;
+  font-weight: 600;
+  color: $primary;
+}
+b {
+  font-family: $regfont;
+  font-size: $regfontsize;
+  font-weight: 600;
+  color: $darkblue;
+}
+
+// image transitions
+
+
+
+//
+//Nav
+//
+.weblogo {
+  width: 50px;
+}
+
+.navbar-light {
+  background-color: $blue;
+  color: $white;
+}
+.negative {
+  color: $white;
+}
+.mobileheader {
+  width: 100%;
+}
+.pagetitle {
+  text-align: center;
+}
+.nopadding {
+  padding: 0;
+}
+.header {
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.centered {
+  text-shadow: $headerfontshade;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobileintro {
+  padding-top: 30px;
+}
+.paddingleft {
+  padding-left: $regpadding;
+  text-align: left;
+}
+
+.paddingright {
+  padding-right: $regpadding;
+}
+
+.stretch {
+  padding: 0;
+}
+
+.armsup {
+  margin-top: -20px;
+  background-image: url("../../assets/mobile/armsup.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bottomline {
+  border-bottom: solid 10px $lightblue
+}
+.armsupspace {
+  margin-top: 45px;
+  margin-bottom: 9px;
+}
+
+.alignright {
+  text-align: right;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 41px;
+  right: 0px;
+  background-color: $blue;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.festivalname {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: $darkblue;
+}
+.festivaldescr {
+  margin-top: -8px;
+  margin-left: 15px;
+  color: $blue;
+}
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: $blue;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.andmore {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.textindent {
+  padding-left: 15px;
+  border-left: thick solid $blue;
+}
+.nextbutton {
+  padding-left: 5px;
+  padding-top: 50px;
+}
+
+//
+// footer
+//
+
+.footer {
+  margin-top: 20px;
+}
+.bgblue {
+  background-color: $blue;
+  padding-top: 14px;
+}
+.bfslogo {
+  padding-left: 15px;
+}
+
+.grey {
+  background-color: #EEE;
+  padding: auto;
+}
+
+//
+//about
+//
+
+.thinking {
+  margin-top: -20px;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.theteam {
+  background: $primary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#53CDFD, #53A1FD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#53CDFD, #53A1FD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#53CDFD, #53A1FD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#53CDFD, #53A1FD); /* Standard syntax */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px; 
+  margin-bottom: -20px;
+}
+.theteamtitle {
+  font-size: 30px;
+}
+.theteamspacing {
+  margin-top: 20px;
+}
+.dark {
+  background-color: $darkbluetransparent;
+  width: 100%;
+  padding: 12px 0px 12px 10px
+  }
+.dark2 {
+  background-color: $darkbluetransparent;
+  padding: 5px 24px 0px 24px;
+}
+.rounded-topright{
+  border-radius: 0px 20px 0px 0px;
+}
+
+//
+// Locations
+//
+
+.centeredtop {
+  text-shadow: $headerfontshade;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom-rightloc {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: $blue;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.locations {
+  margin-bottom: -20px;
+}
+
+//
+//faq
+//
+
+.item {
+  margin-top: 10px;
+  color: $secondary;
+  font-family: $h2font;
+  font-size: $h2fontsize;
+}
+
+.bottom-right-transp {
+  position: absolute;
+  bottom: 0px;
+  right: 45px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  padding: 5px 10px;
+}
+
+.headerbutton {
+  margin-top: 30px;
+}
+.questions {
+  text-align: right;
+}
+
+.message {
+  border-radius: 0px 20px 0px 0px; 
+}
+.sendbutton {
+  border-radius: 40px;
+}
+
+//
+// basket
+//
+
+.form-control {
+  background-color: $white;
+  border: none;
+  -webkit-filter: drop-shadow(0 3px 5px rgba(0,26,76,0.3));
+	-moz-filter: drop-shadow(0 3px 5px rgba(0,26,76,0.3));
+	-ms-filter: drop-shadow(0 3px 5px rgba(0,26,76,0.3));
+	filter: drop-shadow(0 3px 5px rgba(0,26,76,0.3));
+  border-radius: 0px;
+}
+.bluegradient {
+  padding-top: 30px;
+  margin-top: -35px;
+  padding-bottom: 20px;
+  background: $primary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#53CDFD, #53A1FD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#53CDFD, #53A1FD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#53CDFD, #53A1FD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#53CDFD, #53A1FD); /* Standard syntax */
+}
+.headerblue {
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-filter: drop-shadow(0 10px 10px rgba(0,26,76,0.3));
+	-moz-filter: drop-shadow(0 10px 10px rgba(0,26,76,0.3));
+	-ms-filter: drop-shadow(0 10px 10px rgba(0,26,76,0.3));
+	filter: drop-shadow(0 10px 10px rgba(0,26,76,0.3));
+}
+.styleSelect {
+  background-color: $blue;
+}
+
+.btn-primary {
+  align-self: right;
+  background-color: $white;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn-primary:hover {
+  align-self: right;
+  background-color: $darkblue;
+  color: $white;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.darkblue {
+  color: $darkblue;
+}
+.bottomborder {
+  border-bottom: solid 2px $blue;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.basket {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+//
+//Basket2
+//
+
+.basketprogress {
+  text-align: center;
+  color: $white;
+}
+.basketactive {
+  text-align: center;
+  color: $darkblue;
+}
+.bluegradientprogress {
+  padding-top: 30px;
+  margin-top: -35px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  background: $primary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#53CDFD, #53A1FD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#53CDFD, #53A1FD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#53CDFD, #53A1FD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#53CDFD, #53A1FD); /* Standard syntax */
+}
+.noshadow {
+ background-color: $grey;
+  border: none;
+  -webkit-filter: drop-shadow(0 0px 0px rgba(0,26,76,0.0));
+	-moz-filter: drop-shadow(0 0px 0px rgba(0,26,76,0.0));
+	-ms-filter: drop-shadow(0 0px 0px rgba(0,26,76,0.0));
+	filter: drop-shadow(0 0px 0px rgba(0,26,76,0.0));
+  border-radius: 0px;
+}
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.addbasket {
+  font-size: 25px;
+  text-align: right;
+}
+//
+//basket3
+//
+
+.subm {
+  padding-left: 5px;
+}
+.spacingbasket3{
+  margin-bottom: 40px;
+}
+
+.submissions {
+  margin-bottom: 30px;
+}
+
+//
+//basket4
+//
+
+.payments {
+  margin-top: 20px; 
+}
+
+.aligncenter {
+  text-align: center;
+}
+.confirmation {
+  margin-top: 30px;
+}
+
+
+
+
+//
+//
+//Tablet Conversion
+//
+//
+
+
+//
+// Tablet Fonts
+//
+
+@include media-breakpoint-up(md) {
+  p,.p {
+    font-family: $regfont;
+    font-size: $tregfontsize;
+    font-weight: 500;
+    color: $darkblue;
+  }
+  h1,.h1 {
+    font-family: $titlefont;
+    font-size: $ttitlefontsize;
+  }
+  h2 {
+    font-family: $h2font;
+    font-size: $th2fontsize;
+    font-weight: 600;
+    color: $darkblue; 
+  }
+  h3,.h3 {
+    font-family: $h3font;
+    font-size: $th3fontsize;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-family: $h4font;
+    font-size: $th4fontsize;
+    font-weight: 600;
+  }
+  h5 {
+    font-family: $h5font;
+    font-size: $th5fontsize;
+    font-weight: 600;
+    color: $blue; 
+  }
+  b {
+    font-family: $regfont;
+    font-size: $tregfontsize;
+    font-weight: 600;
+    color: $darkblue;
+  }
+}
+
+//
+// Hide mobile, show tablet
+//
+@media (max-width: 766px) {
+  .mhide {
+    display: none;
+  }
+ }
+@include media-breakpoint-up(md) {
+  .thide {
+    display: none
+  }
+} 
+
+//
+//tablet media query edits
+//
+
+@include media-breakpoint-up(md) {
+  .armsup {
+    margin-top: -67px;
+    background-image: url("../../assets/tablet/armsup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: -10px;
+  }
+  .armsupspace {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .andmore {
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+  }
+  .tabletteam {
+    border-radius: 0px; 
+    padding-left: 8px;
+    padding-right: 8px; 
+  }
+  .question {
+    font-size: 20px;
+    font-weight: 600px;  
+    color: $darkblue; 
+  }
+  .coloredquestion {
+    background-color: $lightblue; 
+  }
+  .bottom-left-t {
+    position: absolute;
+    bottom: 75px;
+    left: 0px;
+    width: 100%;
+    padding-left: 50px; 
+    text-align: left; 
+  }
+  .bottom-right-transparent-t {
+    position: absolute;
+    bottom: 75px;
+    right: 100px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  .bottom-right-transparent-t2 {
+    position: absolute;
+    bottom: 65px;
+    right: 90px;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 20px;
+  }
+  .questions {
+    text-align: left;
+  }
+  .bluegradient {
+    padding-top: 50px;
+    margin-top: -65px;
+    padding-bottom: 20px;
+  }
+  .basket {
+    padding-top: 50px;
+    padding-bottom: 30px; 
+    margin-bottom: 50px;
+  }
+  .bluegradientprogress {
+    padding-top: 60px;
+    margin-top: -75px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+  .form-group-t-bottom {
+    margin-bottom: 80px;
+  }
+  .form-group-t {
+    margin-top: 40px;
+    margin-bottom: 20px; 
+  }
+  .form-control {
+    margin-bottom: 20px; 
+  }
+  .marginbottom {
+    margin-bottom: 50px; 
+  }
+  .payments {
+    margin-top: 50px; 
+    margin-bottom: 80px; 
+  }
+} 
+
+//
+//tablet edits - index
+//
+
+
+.introtext-t {
+  margin-top: 40px;
+}
+
+.pagetitle-t {
+  margin-top: 30px;
+}
+.bottom-right-t {
+  position: absolute;
+  bottom: 75px;
+  right: 0px;
+  background-color: $blue;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.circlebutton {
+  border-radius: 50px; 
+  width: 50%; 
+}
+.contentright {
+  float: right; 
+  vertical-align: middle; 
+}
+
+.subheadertablet {
+  margin-top: 50px; 
+}
+
+//
+//tablet edits - about
+//
+
+.tabletteam-names {
+  h3 {
+    font-size: 20px;
+    margin-top: 15px; 
+  }
+  p{
+    font-size: 14px;
+    margin-top: -10px; 
+  }
+}
+.titletablet {
+  margin-bottom: 30px; 
+}
+
+//
+//tablet edits - faq
+//
+
+.convinced {
+  margin-top: 60px; 
+}
+
+//
+//tablet edits - baskets
+//
+
+.pagetitle-tablet  {
+  text-align: center; 
+  margin-top: 30px;
+  margin-bottom: 50px;  
+}
+.notepay {
+  margin-top: 95px; 
+}
