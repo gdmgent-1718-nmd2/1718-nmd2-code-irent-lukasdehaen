@@ -8,10 +8,11 @@ title: basket3
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-12 header negative">
-            <img src="assets/mobile/header.png" alt="header" class="mobileheader img-fluid thide">
-            <img src="assets/tablet/header.png" alt="header" class="mobileheader img-fluid mhide">
-            <div class="centered thide dark">
+        <div class="col-12 col-md-12 col-xl-12 header headerblue negative">
+            <img src="assets/mobile/header.png" alt="header" class="mobileheader img-fluid thide dhide">
+            <img src="assets/tablet/header.png" alt="header" class="mobileheader img-fluid mhide dhide">
+            <img src="assets/desktop/header.png" alt="header" class="mobileheader img-fluid mhide thide">
+            <div class="centered thide dark dhide">
                 <h1>BOOKINGS</h1>
                 <h2 class="negative">For an experience to never forget</h2>
             </div>
@@ -22,30 +23,32 @@ title: basket3
         </div>
     </div>
     <div class="row justify-content-center bluegradientprogress no-gutter">
-        <div class="col-2 nopadding negative">
+        <div class="col-2 col-md-2 col-xl-2 nopadding negative">
             <p class="basketprogress negative">SELECT</p>
         </div>
-       <div class="col-2 nopadding">
+       <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">SUBMIT</p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketactive"><b>CONFIRM</b></p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">PAY</p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">HAVEFUN</p>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-11">
-            <h3 class="pagetitle spacingbasket3 thide">Confirm billing information and purchase</h3>
+            <h3 class="pagetitle spacingbasket3 thide dhide">Confirm billing information and purchase</h3>
             <h3 class="pagetitle-tablet spacingbasket3 mhide">Confirm billing information and purchase</h3>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-5 col-md-5">
+    <div class="row justify-content-center no-gutter">
+        <div class="col-xl-2 thide mhide">
+        </div>
+        <div class="col-5 col-md-5 col-xl-3 confirm-items">
             <div>
                 <h5>Full name</h5>
                 <p class="subm">Lukas Dehaen</p>
@@ -58,8 +61,12 @@ title: basket3
                 <h5>ZIP code</h5>
                 <p class="subm">9000</p>
             </div>
+            <div>
+                <h5>Email address</h5>
+                <p class="subm">lukasdehaen.concept@gmail.com</p>
+            </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 col-xl-3 confirm-items">
             <div>
                 <h5>City</h5>
                 <p class="subm">Gent</p>
@@ -73,19 +80,16 @@ title: basket3
                 <p class="subm">0488 395 221</p>
             </div>
         </div>
-        <div class="col-11 col-md-9 submissions">
-            <div>
-                <h5>Email address</h5>
-                <p class="subm">lukasdehaen.concept@gmail.com</p>
-            </div>
+        <div class="col-xl-4 thide mhide nopadding">
+            <img src="assets/desktop/card.png" alt="hello" class="mobileheader img-fluid mhide thide">
         </div>
     </div>
 
 
 
     <div class="row justify-content-center grey basket">
-        <div class="col-12 col-md-10">
-            <h1 class="darkblue alignleft">BASKET</h1>
+        <div class="col-12 col-md-10 col-xl-9">
+            <h1 class="darkblue alignleft d-textblock">BASKET</h1>
             <table class="table table-hover">
                 <tbody>
                     <tr class="p bottomborder">
@@ -114,12 +118,14 @@ title: basket3
                 </table>
         </div>
     </div>
-    <div class="row justify-content-end align-items-center marginbottom">
-        <div class="col-8 col-md-8">
-            <a href="basket2.html"><h3>GO BACK AND EDIT</h3></a>
+    <div class="row justify-content-end">
+        <div class="col-9 col-md-8 col-xl-7">
+            <p><b>Tickets or not yet reserved.<br> You agree with the absence of the right of withdrawal.</b></p>
         </div>
-        <div class="col-3 col-md-3 ">
+        <div class="col-3 col-md-3 col-xl-1">
             <a href="basket4.html"><img src="assets/mobile/nextbuttonsquare.png" alt="send" class="sendbutton"></a>
+        </div>
+        <div class="col-xl-2 thide mhide">
         </div>
     </div>
 </div>

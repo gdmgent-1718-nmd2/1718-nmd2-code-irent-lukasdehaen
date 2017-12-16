@@ -262,7 +262,7 @@ b {
 //
 
 .item {
-  margin-top: 10px;
+  margin: 10px;
   color: $secondary;
   font-family: $h2font;
   font-size: $h2fontsize;
@@ -289,9 +289,6 @@ b {
   text-align: right;
 }
 
-.message {
-  border-radius: 0px 20px 0px 0px; 
-}
 .sendbutton {
   border-radius: 40px;
 }
@@ -450,7 +447,7 @@ b {
 // Tablet Fonts
 //
 
-@include media-breakpoint-up(md) {
+@media (min-width: 767px) and (max-width: 1199px) {
   p,.p {
     font-family: $regfont;
     font-size: $tregfontsize;
@@ -501,7 +498,7 @@ b {
     display: none;
   }
  }
-@include media-breakpoint-up(md) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .thide {
     display: none
   }
@@ -534,7 +531,7 @@ b {
   margin-left: 0; 
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .armsup {
     margin-top: -67px;
     background-image: url("../../assets/tablet/armsup.png");
@@ -565,6 +562,8 @@ b {
   }
   .coloredquestion {
     background-color: $lightblue; 
+    padding: 10px; 
+    margin: 10px; 
   }
   .bottom-left-t {
     position: absolute;
@@ -700,4 +699,241 @@ b {
 }
 .img-fluid {
   width: 100%
+}
+
+
+//
+//
+// DESKTOP
+//
+//
+
+//
+// DESKTOP Fonts
+//
+
+@include media-breakpoint-up(xl) {
+  p,.p {
+    font-family: $regfont;
+    font-size: $dregfontsize;
+    font-weight: 500;
+    color: $darkblue;
+  }
+  h1,.h1 {
+    font-family: $titlefont;
+    font-size: $dtitlefontsize;
+  }
+  h2, .h2 {
+    font-family: $h2font;
+    font-size: $dh2fontsize;
+    font-weight: 600;
+    color: $darkblue; 
+  }
+  h3,.h3 {
+    font-family: $h3font;
+    font-size: $dh3fontsize;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+  h4, .h4 {
+    font-family: $h4font;
+    font-size: $dh4fontsize;
+    font-weight: 600;
+  }
+  h5 {
+    font-family: $h5font;
+    font-size: $dh5fontsize;
+    font-weight: 600;
+    color: $blue; 
+  }
+  b {
+    font-family: $regfont;
+    font-size: $dregfontsize;
+    font-weight: 600;
+    color: $darkblue;
+  }
+}
+
+//
+// Hide on DESKTOP
+//
+
+@include media-breakpoint-up(xl) {
+  .dhide {
+    display: none; 
+  }
+}
+
+//
+// DESKTOP Edits
+//
+
+@include media-breakpoint-up(xl) {
+  .textindent {
+    margin-top: 50px; 
+    padding-left: 40px;
+    border-left: solid 5px $blue;
+  }
+  .armsup {
+    margin-top: -67px;
+    background-image: url("../../assets/desktop/armsup.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: -40px;
+    height: 1300px; 
+    width: 100%
+  }
+  .armsupspace {
+    padding-top: 250px; 
+    margin-top: 20px;
+  }
+  .d-textblock {
+    margin-bottom: 70px; 
+  }
+  .circlebutton {
+    border-radius: 50px; 
+    width: 20%; 
+  }
+  .locationmargin {
+    margin-bottom: 50px;
+    margin-top: 30px; 
+  }
+  .locationmargin2 {
+    margin-bottom: 150px;
+  }
+  .faq-button1 {
+    padding-bottom: 130px; 
+  }
+  .faq-button2 {
+    padding-bottom: 100px; 
+  }
+  .faq-overlay {
+  margin-top: -400px;
+  }
+  .header {
+  margin-bottom: 75px;
+  }
+  .rounded-topright {
+    border-radius: 0px 80px 0px 0px;
+  }
+  .theteam {
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    margin-bottom: -20px;
+  }
+  .question {
+    font-size: 25px;
+    font-weight: 600px;  
+    color: $darkblue; 
+  }
+  .bottom-left-t {
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    width: 100%;
+    padding-left: 100px; 
+    text-align: left; 
+  }
+  .bottom-right-transparent-t {
+    position: absolute;
+    bottom: 150px;
+    right: 200px;
+    padding: 5px 10px;
+    font-size: 30px;
+  }
+  .bottom-right-transparent-t2 {
+    position: absolute;
+    bottom: 140px;
+    right: 180px;
+    padding: 5px 10px;
+    font-size: 30px;
+    width: 20px;
+  }
+  .questions {
+  text-align: left;
+  }
+  .sendbutton {
+  border-radius: 80px;
+  width: 80px;
+  float: right; 
+  }
+  .bluegradient {
+  padding-top: 100px;
+  margin-top: -150px;
+  padding-bottom: 20px;
+  }
+  .btn-primary {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: $dregfontsize;
+}
+  .btn-primary:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: $dregfontsize;
+  }
+  .form-control {
+    background-color: $white;
+    font-size: $dregfontsize;
+  }
+  .basket {
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    margin-bottom: 50px;
+  }
+  .bluegradientprogress {
+    padding-top: 150px;
+    margin-top: -200px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  .noshadow {
+  background-color: $grey;
+  padding: 10px;
+  margin-bottom: 35px;
+  }
+  label {
+    font-family: $h2font;
+    font-size: $dh2fontsize;
+  }
+  .confirm-items {
+    margin-top: 80px; 
+  }
+  .payments {
+    margin-top: 75px; 
+    margin-bottom: 75px; 
+  }
+}
+
+//
+// DESKTOP scss
+//
+
+.desktopintro {
+  padding-top: 100px; 
+}
+
+.textindent-white {
+  padding-left: 50px;
+  border-left: solid 5px $white; 
+}
+.teamnames-d {
+  margin-top: 50px; 
+}
+.answer {
+  padding-left: 50px; 
+}
+.bluebg {
+  background-color: $lightblue; 
+  padding: 30px; 
+  margin: 30px; 
+}
+.negative {
+  color: $white;
+}
+
+.thanks {
+  text-align: center; 
 }

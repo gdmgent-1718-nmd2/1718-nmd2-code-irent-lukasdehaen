@@ -8,10 +8,11 @@ title: basket2
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-12 header negative">
-            <img src="assets/mobile/header.png" alt="header" class="mobileheader img-fluid thide">
-            <img src="assets/tablet/header.png" alt="header" class="mobileheader img-fluid mhide">
-            <div class="centered thide dark">
+        <div class="col-12 col-md-12 col-xl-12 header headerblue negative">
+            <img src="assets/mobile/header.png" alt="header" class="mobileheader img-fluid thide dhide">
+            <img src="assets/tablet/header.png" alt="header" class="mobileheader img-fluid mhide dhide">
+            <img src="assets/desktop/header.png" alt="header" class="mobileheader img-fluid mhide thide">
+            <div class="centered thide dark dhide">
                 <h1>BOOKINGS</h1>
                 <h2 class="negative">For an experience to never forget</h2>
             </div>
@@ -22,24 +23,24 @@ title: basket2
         </div>
     </div>
     <div class="row justify-content-center bluegradientprogress no-gutter">
-        <div class="col-2 nopadding negative">
+        <div class="col-2 col-md-2 col-xl-2 nopadding negative">
             <p class="basketprogress negative">SELECT</p>
         </div>
-       <div class="col-2 nopadding">
+       <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketactive"><b>SUBMIT</b></p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">CONFIRM</p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">PAY</p>
         </div>
-        <div class="col-2 nopadding">
+        <div class="col-2 col-md-2 col-xl-2 nopadding">
             <p class="basketprogress">HAVEFUN</p>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-11 thide">
+        <div class="col-11 thide dhide">
             <h3 class="pagetitle">Submit billing information</h3>
         </div>
         <div class="col-11 mhide">
@@ -47,7 +48,7 @@ title: basket2
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-11 thide">
+        <div class="col-11 thide dhide">
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Full name</label>
@@ -67,42 +68,42 @@ title: basket2
                 </div>
             </form>
         </div>
-        <div class="col-md-5 mhide">
+        <div class="col-md-5 col-xl-4 mhide">
             <form>
                 <div class="form-group-t">
-                    <label for="exampleInputEmail1">Full name</label>
+                    <label for="exampleInputEmail1" class="h2">Full name</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter first and last name">
-                    <label for="exampleInputEmail1">Address</label>
+                    <label for="exampleInputEmail1" class="h2">Address</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter street and apt/house no.">
-                    <label for="exampleInputEmail1">ZIP/Postal code</label>
+                    <label for="exampleInputEmail1" class="h2">ZIP/Postal code</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter code">
                 </div>
             </form>
         </div> 
-        <div class="col-md-5 mhide">
+        <div class="col-md-5 col-xl-4 mhide">
             <form>
                 <div class="form-group-t">
-                    <label for="exampleInputEmail1">City</label>
+                    <label for="exampleInputEmail1" class="h2">City</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter city">
-                    <label for="exampleInputEmail1">Country</label>
+                    <label for="exampleInputEmail1" class="h2">Country</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter country">
-                    <label for="exampleInputEmail1">Phone Number</label>
+                    <label for="exampleInputEmail1" class="h2">Phone Number</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone number">
                 </div>
             </form>
         </div>
-        <div class="col-md-10 mhide">
+        <div class="col-md-10 col-xl-8 mhide d-textblock">
             <form>
                 <div class="form-group-t-bottom">
-                    <label for="exampleInputEmail1">Email address</label>
+                    <label for="exampleInputEmail1" class="h2">Email address</label>
                     <input type="email" class="form-control noshadow" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
             </form>
         </div> 
     </div>
-    <div class="row justify-content-center grey basket">
-        <div class="col-12 col-md-10">
-            <h1 class="darkblue alignleft">BASKET</h1>
+     <div class="row justify-content-center grey basket">
+        <div class="col-12 col-md-10 col-xl-9">
+            <h1 class="darkblue alignleft d-textblock">BASKET</h1>
             <table class="table table-hover">
                 <tbody>
                     <tr class="p bottomborder">
@@ -132,11 +133,13 @@ title: basket2
         </div>
     </div>
     <div class="row justify-content-end">
-        <div class="col-9 col-md-8">
+        <div class="col-9 col-md-8 col-xl-7">
             <p><b>Tickets or not yet reserved.<br> You agree with the absence of the right of withdrawal.</b></p>
         </div>
-        <div class="col-3 col-md-3">
+        <div class="col-3 col-md-3 col-xl-1">
             <a href="basket3.html"><img src="assets/mobile/nextbuttonsquare.png" alt="send" class="sendbutton"></a>
+        </div>
+        <div class="col-xl-2 thide mhide">
         </div>
     </div>
 </div>
