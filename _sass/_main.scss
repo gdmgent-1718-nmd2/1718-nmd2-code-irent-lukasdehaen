@@ -75,6 +75,7 @@ b {
   background-color: $blue;
   color: $white;
 }
+
 .negative {
   color: $white;
 }
@@ -252,9 +253,6 @@ b {
 //about
 //
 
-.thinking {
-  margin-top: -20px;
-}
 
 .alignright {
   text-align: right;
@@ -268,7 +266,7 @@ b {
   background: linear-gradient(#53CDFD, #53A1FD); /* Standard syntax */
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-top: 30px; 
+  margin-top: 0px; 
   margin-bottom: -20px;
 }
 .theteamtitle {
@@ -309,10 +307,31 @@ b {
   padding: 5px 10px;
   font-size: 15px;
 }
-.locations {
-  margin-bottom: -20px;
+
+.locationsbtn {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30%;
+}
+.locationsbtnm {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 18%;
+}
+.locationsbtnm2 {
+  text-align: center;
+  vertical-align: middle;
+  
+}
+.requestbtn {
+  background-color: $grey;
+  color: $secondary;
 }
 
+.bookherebtn {
+  background-color: $secondary;
+  color: $white; 
+}
 //
 //faq
 //
@@ -348,6 +367,7 @@ b {
 .sendbutton {
   border-radius: 40px;
 }
+
 
 //
 // basket
@@ -514,7 +534,7 @@ b {
     font-family: $titlefont;
     font-size: $ttitlefontsize;
   }
-  h2 {
+  h2,.h2 {
     font-family: $h2font;
     font-size: $th2fontsize;
     font-weight: 600;
@@ -596,12 +616,12 @@ b {
 
 @media (min-width: 767px) and (max-width: 1199px) {
   .armsup {
-    margin-top: -67px;
+    margin-top: -77px;
     background-image: url("../../assets/tablet/armsup.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     height: 600px; 
     width: 100%
   }
@@ -612,6 +632,9 @@ b {
   }
   .andmore {
     margin-top: 100px; 
+  }
+  .theteam {
+    margin-top: 50px; 
   }
   .tabletteam {
     border-radius: 0px; 
@@ -687,6 +710,9 @@ b {
     margin-top: 50px; 
     margin-bottom: 80px; 
   }
+  .locations {
+  margin-bottom: 50px;
+}
 } 
 
 //
@@ -720,6 +746,9 @@ b {
 
 .subheadertablet {
   margin-top: 50px; 
+}
+.intro-t {
+  margin-top: -20px; 
 }
 
 //
@@ -880,7 +909,7 @@ b {
     padding-bottom: 100px; 
   }
   .faq-overlay {
-  margin-top: -400px;
+  margin-top: -400px; 
   }
   .header {
   margin-bottom: 75px;
@@ -983,6 +1012,12 @@ b {
     padding-bottom: 20px;
     margin-right: 40px;
     text-align: right; 
+  }
+  .locations {
+  margin-bottom: 100px;
+}
+.contactform {
+  margin-bottom: 100px; 
   }
 }
 
