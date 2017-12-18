@@ -40,6 +40,14 @@ h5 {
   font-weight: 600;
   color: $primary;
 }
+
+.h5c {
+  font-family: $h5cfont;
+  font-size: $h5cfontsize;
+  font-weight: 600;
+  color: $white;
+  text-transform: $h5ctransform;
+}
 b {
   font-family: $regfont;
   font-size: $regfontsize;
@@ -54,10 +62,15 @@ b {
 //
 //Nav
 //
+
+
+.nav-item {
+  text-align: center;
+}
 .weblogo {
   width: 50px;
 }
-
+.navbar-light .navbar-nav .nav-link,
 .navbar-light {
   background-color: $blue;
   color: $white;
@@ -65,6 +78,23 @@ b {
 .negative {
   color: $white;
 }
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .weblogo {
+    width: 100px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .weblogo {
+    margin-left: 50px;
+    width: 100px;
+  }
+}
+
+//
+//INDEX
+//
+
 .mobileheader {
   width: 100%;
 }
@@ -177,7 +207,7 @@ b {
 //
 
 .footer {
-  margin-top: 20px;
+  background-color: $grey; 
 }
 .bgblue {
   background-color: $blue;
@@ -185,11 +215,37 @@ b {
 }
 .bfslogo {
   padding-left: 15px;
+  width: 50px;
 }
-
+.footermedia {
+  width: 20px; 
+}
 .grey {
   background-color: #EEE;
   padding: auto;
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .footermedia {
+    width: 40px;
+  }
+  .bfslogo {
+    width: 130px; 
+    padding-left: 20%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .bfslogo { 
+    width: 140px;
+    margin-left: 50px; 
+  }
+  .footermedia {
+    width: 50px; 
+  }
+}
+.footertext {
+  text-align: right;
+  padding-right: 10%;
 }
 
 //
@@ -482,6 +538,13 @@ b {
     font-weight: 600;
     color: $blue; 
   }
+  .h5c {
+  font-family: $th5cfont;
+  font-size: $th5cfontsize;
+  font-weight: 600;
+  color: $white;
+  text-transform: $th5ctransform;
+  }
   b {
     font-family: $regfont;
     font-size: $tregfontsize;
@@ -747,6 +810,13 @@ b {
     font-weight: 600;
     color: $blue; 
   }
+  .h5c {
+  font-family: $dh5cfont;
+  font-size: $dh5cfontsize;
+  font-weight: 600;
+  color: $white;
+  text-transform: $dh5ctransform;
+}
   b {
     font-family: $regfont;
     font-size: $dregfontsize;
@@ -868,7 +938,7 @@ b {
   padding-left: 30px;
   padding-right: 30px;
   font-size: $dregfontsize;
-}
+  }
   .btn-primary:hover {
     padding-left: 30px;
     padding-right: 30px;
@@ -905,6 +975,15 @@ b {
     margin-top: 75px; 
     margin-bottom: 75px; 
   }
+  .desktopfaq {
+    margin-bottom: 100px;
+  }
+  .nav-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    text-align: right; 
+  }
 }
 
 //
@@ -936,4 +1015,28 @@ b {
 
 .thanks {
   text-align: center; 
+}
+
+//
+// Animation
+//
+
+.greyhover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.greyhover:hover {
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.brighthover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.brighthover:hover {
+  -webkit-filter: brightness(150%);  /* Safari */
+  filter:  brightness(150%);
 }

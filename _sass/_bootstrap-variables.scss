@@ -53,6 +53,10 @@ $h4font: Montserrat, bold;
 $h5fontsize: 14px;
 $h5font: Montserrat, bold;
 
+$h5cfontsize: 14px;
+$h5cfont: Montserrat, bold;
+$h5ctransform: uppercase;
+
 $headerfontcolor: white;
 $headerfontshade: 2px 4px 4px rgba(0,26,76,0.8);
 
@@ -77,6 +81,9 @@ $h4font: Montserrat, bold;
 $th5fontsize: 22px;
 $h5font: Montserrat, bold;
 
+$th5cfontsize: 22px;
+$th5cfont: Montserrat, bold;
+$th5ctransform: uppercase;
 
 // Desktop
 
@@ -97,3 +104,7 @@ $h4font: Montserrat, bold;
 
 $dh5fontsize: 30px;
 $h5font: Montserrat, bold;
+
+$dh5cfontsize: 25px;
+$dh5cfont: Montserrat, bold;
+$dh5ctransform: uppercase;

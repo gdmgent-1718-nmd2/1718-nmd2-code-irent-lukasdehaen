@@ -17,7 +17,7 @@
                 {% assign class = ' active' %}
             {% endif %}
             {% if link.sublinks %}
-                <li class="nav-item dropdown {{ class }}">
+                <li class="nav-item dropdown h5c {{ class }}">
                     <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         {% for sublink in link.sublinks %}
@@ -28,7 +28,7 @@
                     </ul>
                 </li>
             {% else %}
-                <li class="nav-item{{ class }} negative">
+                <li class="nav-item negative h5c {{ class }}">
                     <a class="nav-link{{ class }} negative" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 </li>
             {% endif %}
