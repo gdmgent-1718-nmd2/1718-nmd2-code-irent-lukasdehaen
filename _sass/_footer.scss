@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900'),
+  "bootstrap-variables",                  // See _bootstrap-variables.scss
+  "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+//
+// footer
+//
+
+.footer {
+  background-color: $grey; 
+}
+.bgblue {
+  background-color: $blue;
+  padding-top: 14px;
+}
+.bfslogo {
+  padding-left: 15px;
+  width: 50px;
+}
+.footermedia {
+  width: 20px; 
+}
+.grey {
+  background-color: #EEE;
+  padding: auto;
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .footermedia {
+    width: 40px;
+  }
+  .bfslogo {
+    width: 130px; 
+    padding-left: 20%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .bfslogo { 
+    width: 140px;
+    margin-left: 50px; 
+  }
+  .footermedia {
+    width: 50px; 
+  }
+}
+.footertext {
+  text-align: right;
+  padding-right: 10%;
+}

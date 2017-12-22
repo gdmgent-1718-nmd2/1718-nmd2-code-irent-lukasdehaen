@@ -55,42 +55,6 @@ b {
   color: $darkblue;
 }
 
-// image transitions
-
-
-
-//
-//Nav
-//
-
-
-.nav-item {
-  text-align: center;
-}
-.weblogo {
-  width: 50px;
-}
-.navbar-light .navbar-nav .nav-link,
-.navbar-light {
-  background-color: $blue;
-  color: $white;
-}
-
-.negative {
-  color: $white;
-}
-
-@media (min-width: 767px) and (max-width: 1199px) {
-  .weblogo {
-    width: 100px;
-  }
-}
-@include media-breakpoint-up(xl) {
-  .weblogo {
-    margin-left: 50px;
-    width: 100px;
-  }
-}
 
 //
 //INDEX
